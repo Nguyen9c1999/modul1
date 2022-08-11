@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="" id="ip1" onchange="doF()"> độ C
+<br>
+<h1 id="hienThi"></h1>
+<script>
+    function doF(){
+        let doC = document.getElementById("ip1").value
+       let doF = doC * 9/5 + 32
+        document.getElementById("hienThi").innerHTML = " do F la " + doF
+    }
+
+</script>
+</body>
+</html>

@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    #a{
+        margin-bottom: 5px;
+    }
+    #b{
+        margin-bottom: 10px;
+    }
+
+</style>
 </head>
 <body>
-$END$
+<h1>Tính chỉ số cân nặng</h1>
+<div id="a">
+<label for="can nang"> Nhập cân nặng: (kg)</label>
+<input type="text" name="" id="can nang">
+</div>
+<br>
+<div id="b">
+    <label for="chieu cao">Nhập chiều cao: (m)</label>
+<input type="text" name="" id="chieu cao">
+    </div>
+<input type="button" value="kiểm tra" onclick="tinhBmi()">
+<script>
+    function tinhBmi() {
+    let canNang = document.getElementById("can nang").value;
+let chieuCao =document.getElementById("chieu cao").value;
+    let bmi = canNang / Math.pow(chieuCao,2);
+    if (bmi < 18.5) {
+        alert("underweight")
+    } else if(bmi >= 18.5 && bmi<25 ) {
+        alert("normal")
+
+    }else if (bmi>=25 && bmi <=30){
+        alert("over weight")
+    }else {
+        alert("obest")
+    }
+
+        }
+    
+</script>
+
 </body>
 </html>

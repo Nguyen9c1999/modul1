@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<!--let message;-->
+
+<!--if (login == 'Employee') {-->
+<!--message = 'Hello';-->
+<!--} else if (login == 'Director') {-->
+<!--message = 'Greetings';-->
+<!--} else if (login == '') {-->
+<!--message = 'No login';-->
+<!--} else {-->
+<!--message = '';-->
+<!--}-->
+<script>
+  var login = prompt(" nhap đi") ;
+  var resur =login == 'Employee' ?   "hello" :
+      login == "Director" ? "Greetings" :
+          login == "" ? "No login" :
+              "";
+  alert(resur);
+</script>
 </body>
 </html>

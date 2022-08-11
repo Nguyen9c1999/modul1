@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    Kiểm tra số ngày trong tháng
+</h1>
+<input type="number" name="" id="thang" min="1" max="12">
+<input type="button" value="kiem tra" onclick="ngayTrongThang()" >
+<br>
+<br>
+<div id="ketqua"></div>
+
+<script>
+    function ngayTrongThang(){
+        var thang = document.getElementById("thang").value;
+        switch (thang) {
+            case "1" :
+            case "3" :
+            case "5" :
+            case "7" :
+            case "8" :
+            case "10" :
+            case "12" :
+                document.getElementById("ketqua").innerHTML = "Tháng " + thang + " có 31 ngày"
+                break;
+            case "2" :
+                document.getElementById("ketqua").innerHTML = "Tháng " + thang + " có 28 ngày" +"hoac 29 ngay"
+                break;
+            default :
+                document.getElementById("ketqua").innerHTML = "Tháng " + thang + " có 30 ngày"
+
+
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let nhap = prompt("nhap ten tu ban phim")
+    if (nhap =="Admin"){
+        let nhap2 = prompt("nhap mat khau ")
+        if (nhap2 == "TheMaster"){
+            alert("welcome")
+        }else if (nhap2 == "null"){
+            alert("canceld")
+        }else {
+            alert("i dont know")
+        }
+
+    }else if (nhap == "null"){
+        alert("canceld") ;
+    }else {
+        alert("I don’t know you")
+    }
+</script>
 </body>
 </html>

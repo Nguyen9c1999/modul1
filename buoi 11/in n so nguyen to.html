@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let number = +prompt("nhap so nguyen to")
+    let dem = 0 ;
+  let so = 2;
+
+  while (dem < 3){
+      let laSNT = true;
+      for (let i=2;i<so;i++){
+          if (so%i==0){
+              laSNT = false;
+              break;
+          }
+
+
+      }
+     if (laSNT ==true){
+         document.write(" so nguyen to" + so);
+         dem++;
+     }
+     so++;
+
+
+  }
+  // let dem = 0 ;
+  // let so = 2 ;
+  // while (dem<3){
+  //     let laSNT = true;
+  //     for (let i =2 ;i<so ;i++){
+  //         if(so%i==0){
+  //             laSNT = false;
+  //             break;
+  //         }
+  //     }
+  //     if(laSNT){
+  //         document.write(so+" ")
+  //         dem++
+  //     }
+  //     so++
+  // }
+
+
+</script>
+</body>
+</html>

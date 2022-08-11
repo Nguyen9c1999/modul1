@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Do you love</h1>
+<input type="button" value="Yes" onclick="yes()">
+<input id="a" type="button" value="No" style="position: absolute;left: 0;top:0" onmousemove="no()">
+<script>
+  function yes(){
+    alert("toi cung vay")
+  }
+  function no(){
+      var x = Math.round(Math.random() * window.innerWidth);
+      var y = Math.round(Math.random() * window.innerHeight);
+      let nutNo = document.getElementById("a")
+      nutNo.style.left = x + 'px';
+      nutNo.style.top = y + 'px';
+  }
+</script>
+</body>
+</html>
